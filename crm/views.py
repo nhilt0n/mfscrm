@@ -12,8 +12,7 @@ from _decimal import Decimal
 
 now = timezone.now()
 def home(request):
-   return render(request, 'crm/home.html',
-                 {'crm': home})
+   return render(request, 'crm/home.html')  # , {'crm': home}
 
 @login_required
 def customer_list(request):
